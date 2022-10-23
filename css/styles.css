@@ -1,0 +1,166 @@
+/*********************/
+/* HERO SECTION */
+/*******************/
+
+/* - Font sizes (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98 */
+
+.hero-section {
+  background-color: #222;
+  position: relative;
+  color: #fff;
+  padding: 2rem 5rem 0;
+  /* temporary */
+  /* height: 40rem; */
+}
+
+.logo {
+  margin-top: 2rem;
+  display: block;
+  margin-bottom: 5rem;
+  font-size: 3rem;
+  text-align: center;
+}
+
+.btn-help {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  padding: 0.8rem;
+  background-color: #333;
+  font-size: 1.2rem;
+  color: #bbb;
+  border-radius: 4px;
+}
+
+.link:link,
+.link:visited {
+  text-decoration: none;
+  color: #fff;
+}
+
+.hero-info {
+  font-size: 5rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.header-info--secondary {
+  font-size: 1.8rem;
+  text-align: center;
+  color: #bbb;
+  margin-bottom: 5.2rem;
+}
+
+.link-hero:link,
+.link-hero:visited {
+  border-bottom: 1px solid #fff;
+}
+
+.link-hero:hover,
+.link-hero:active {
+  border: 0;
+}
+
+.slider {
+  max-width: 89.2rem;
+  padding: 0 2rem;
+  margin: 0 auto;
+}
+
+.img-slide {
+  width: 100%;
+  display: none;
+}
+
+.img-active {
+  display: block;
+}
+
+.header {
+  margin-top: 10.2rem;
+  margin-bottom: 4.4rem;
+  font-size: 4.4rem;
+  font-weight: 200;
+  text-align: center;
+}
+
+.center {
+  text-align: center;
+}
+
+.get-started {
+  margin-top: 5.2rem;
+}
+
+.max-80 {
+  max-width: 100rem;
+}
+
+.description {
+  text-align: center;
+  font-size: 1.8rem;
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn {
+  text-decoration: none;
+  background: none;
+  cursor: pointer;
+  padding: 1.2rem 2rem;
+
+  border: 1px solid #ddd;
+
+  background-color: #fff;
+
+  font-size: 1.4rem;
+  margin-bottom: 4rem;
+}
+
+.btn:first-child {
+  border-right: none;
+  border-radius: 5px 0 0 5px;
+}
+
+.btn:last-child {
+  border-radius: 0 5px 5px 0;
+}
+
+.btn--active {
+  background-color: #337ec6;
+  color: #fff;
+}
+
+.card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 90rem;
+  align-items: center;
+  /* justify-content: center; */
+  border: 1px solid #ddd;
+  font-size: 1.6rem;
+}
+
+.card-left {
+  text-align: center;
+}
+
+.card--right {
+  border-left: 1px solid #ddd;
+}
+
+.card-heading {
+  font-size: 2.4rem;
+  margin-bottom: 3.2rem;
+}
+
+.card-img {
+  display: block;
+  width: 100%;
+  padding: 2.4rem;
+}
