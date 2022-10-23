@@ -77,6 +77,7 @@ themeOrScratchBtns.forEach((el) =>
   el.addEventListener("click", function (e) {
     manipulateActiveClass(themeOrScratchBtns, e.target);
     manipulateHiddenAtribvute(themeScratchMap, e);
+    console.log(e);
   })
 );
 
