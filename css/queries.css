@@ -1,0 +1,175 @@
+/**************************/
+/* BELOW 1344px (Smaller desktops) */
+/**************************/
+
+@media (max-width: 84rem) {
+  .card {
+    max-width: 85rem;
+  }
+
+  .card--single {
+    max-width: 85rem;
+  }
+}
+
+/**************************/
+/* BELOW 1200px (Landscape Tablets) */
+/**************************/
+
+@media (max-width: 75rem) {
+  .video {
+    width: 75rem;
+    height: 42.3rem;
+  }
+
+  .header {
+    font-size: 3.6rem;
+    padding: 0 3rem;
+  }
+
+  .summary-icon {
+    height: 3rem;
+    width: 3rem;
+  }
+}
+
+/**************************/
+/* BELOW 944px (Tablets) */
+/**************************/
+
+@media (max-width: 59rem) {
+  .video {
+    width: 65rem;
+    height: 36.7rem;
+  }
+
+  .card {
+    max-width: 70rem;
+    grid-template-columns: 1fr;
+  }
+
+  .card-heading {
+    padding-top: 2rem;
+  }
+
+  .card--left {
+    padding: 0 4rem;
+  }
+
+  .card-img {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+
+    margin-top: 5rem;
+  }
+
+  .card--single {
+    max-width: 70rem;
+  }
+
+  .card-icon {
+    height: 5rem;
+    width: 5rem;
+  }
+
+  .terminal-shell {
+    width: 56rem;
+  }
+
+  .grid-3-cols {
+    grid-template-columns: 1fr 1fr;
+    row-gap: 5rem;
+  }
+
+  .blogging,
+  .custom-url,
+  .guides {
+    margin: 0 auto;
+  }
+
+  .guides {
+    grid-column: 1 / -1;
+  }
+
+  .footer {
+    grid-template-columns: 1fr;
+    row-gap: 2.4rem;
+  }
+}
+
+/**************************/
+/* BELOW 760px (Tablets) */
+/**************************/
+
+@media (max-width: 47.5rem) {
+  html {
+    font-size: 50%;
+  }
+  .hero-info {
+    font-size: 4rem;
+  }
+
+  .header-info--secondary {
+    font-size: 1.6rem;
+  }
+
+  .video {
+    width: 45rem;
+    height: 27.1rem;
+  }
+
+  .header {
+    font-size: 2.8rem;
+  }
+
+  .info--primary {
+    margin-bottom: 0;
+  }
+
+  .card-img {
+    margin-top: 2rem;
+  }
+
+  .description {
+    font-size: 1.6rem;
+  }
+
+  .card,
+  .card--single {
+    max-width: 55rem;
+  }
+
+  .terminal-shell {
+    width: 40rem;
+  }
+
+  .grid-3-cols {
+    grid-template-columns: 1fr;
+  }
+
+  .summary {
+    padding-bottom: 6rem;
+  }
+}
+
+/**************************/
+/* BELOW 544px (Tablets) */
+/**************************/
+
+@media (max-width: 34rem) {
+  .video {
+    width: 35rem;
+    height: 19.78rem;
+  }
+
+  .card,
+  .card--single {
+    max-width: 42.5rem;
+    margin-bottom: 4rem;
+  }
+
+  .card-heading {
+    font-size: 2.6rem;
+  }
+}

@@ -1,9 +1,29 @@
-/*********************/
-/* HERO SECTION */
-/*******************/
-
 /* - Font sizes (px)
 10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98 */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Inter", sans-serif;
+  font-size: 62.5%;
+  font-weight: 400;
+  color: #333;
+  background-color: #f5f5f5;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 120rem;
+  /* padding: 0 3.2rem; */
+}
+
+.margin-bottom-mid {
+  margin-bottom: 4.4rem;
+}
 
 .hero-section {
   background-color: #222;
@@ -87,6 +107,11 @@
 
 .center {
   text-align: center;
+}
+
+.video {
+  width: 85.3rem;
+  height: 48rem;
 }
 
 .get-started {
@@ -244,7 +269,7 @@
 }
 
 .terminal-header {
-  width: 70rem;
+  max-width: 70rem;
   height: 2.5rem;
   background-color: #c2c2c2;
   border: 1px solid #9c9c9c;
@@ -259,6 +284,7 @@
 
 .terminal-shell {
   width: 70rem;
+
   background-color: #3d3d3d;
   border-bottom-left-radius: 7px;
   border-bottom-right-radius: 7px;
@@ -366,8 +392,10 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   justify-content: center;
-  padding: 0 45rem;
-  gap: 3rem;
+  /* padding: 0 45rem; */
+  margin: 0 auto;
+  /* gap: 3rem; */
+  column-gap: 4rem;
 }
 
 .flexbox-summary {
@@ -376,6 +404,7 @@
   gap: 2rem;
   align-items: center;
   justify-content: center;
+  max-width: 40rem;
 }
 
 .margin-bottom-big {
@@ -383,8 +412,8 @@
 }
 
 .summary-icon {
-  height: 5rem;
-  width: 5rem;
+  height: 4rem;
+  width: 4rem;
   padding: 3rem;
   color: #337ec6;
   border: 1px solid #e5e5e5;
@@ -409,18 +438,16 @@
   color: #337ec6;
   text-decoration: none;
 }
-/* 
-.footer::before {
-  border-top: 1px solid black;
-} */
 
-/* #e5e5e5  */
+footer {
+  background-color: #fff;
+}
+
 .footer {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  padding: 4rem 45rem;
+  padding: 4rem 0;
 
-  background-color: #fff;
   font-size: 1.2rem;
   align-items: center;
   justify-content: center;

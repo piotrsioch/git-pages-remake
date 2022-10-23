@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <link rel="stylesheet" href="css/general.css" />
     <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/queries.css" />
 
     <link />
 
@@ -66,8 +67,7 @@
           <h1 class="header">What is GitHub pages?</h1>
           <div class="center">
             <iframe
-              width="853"
-              height="480"
+              class="video"
               src="https://www.youtube.com/embed/2MsN8gpT6jY"
               title="YouTube video player"
               frameborder="0"
@@ -595,81 +595,86 @@
             know.
           </p>
         </div>
-
-        <div class="grid-3-cols">
-          <div class="blogging">
-            <div class="flexbox-summary">
-              <ion-icon class="summary-icon" name="pencil-outline"></ion-icon>
-              <a
-                href="https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll"
-                class="summary-header"
-                >Blogging with Jekyll</a
-              >
-              <p class="summary-info">
-                Using <a href="#" class="summary-text-link"> Jekyll</a>, you can
-                blog using beautiful Markdown syntax, and without having to deal
-                with any databases.
-                <a href="#" class="summary-text-link">
-                  Learn how to set up Jekyll.</a
+        <div class="container max-100">
+          <div class="grid-3-cols">
+            <div class="blogging">
+              <div class="flexbox-summary">
+                <ion-icon class="summary-icon" name="pencil-outline"></ion-icon>
+                <a
+                  href="https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll"
+                  class="summary-header"
+                  >Blogging with Jekyll</a
                 >
-              </p>
+                <p class="summary-info">
+                  Using <a href="#" class="summary-text-link"> Jekyll</a>, you
+                  can blog using beautiful Markdown syntax, and without having
+                  to deal with any databases.
+                  <a href="#" class="summary-text-link">
+                    Learn how to set up Jekyll.</a
+                  >
+                </p>
+              </div>
             </div>
-          </div>
-          <div class="custom-url">
-            <div class="flexbox-summary">
-              <ion-icon class="summary-icon" name="link-outline"></ion-icon>
-              <a
-                href="https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site"
-                class="summary-header"
-                >Custom URLs</a
-              >
-              <p class="summary-info">
-                Want to use your own custom domain for a GitHub Pages site? Just
-                create a file named CNAME and include your URL.
-                <a href="#" class="summary-text-link"> Read more</a>.
-              </p>
+            <div class="custom-url">
+              <div class="flexbox-summary">
+                <ion-icon class="summary-icon" name="link-outline"></ion-icon>
+                <a
+                  href="https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site"
+                  class="summary-header"
+                  >Custom URLs</a
+                >
+                <p class="summary-info">
+                  Want to use your own custom domain for a GitHub Pages site?
+                  Just create a file named CNAME and include your URL.
+                  <a href="#" class="summary-text-link"> Read more</a>.
+                </p>
+              </div>
             </div>
-          </div>
-          <div class="guides">
-            <div class="flexbox-summary">
-              <ion-icon class="summary-icon" name="book-outline"></ion-icon>
-              <a href="https://support.github.com/" class="summary-header"
-                >Guides</a
-              >
-              <p class="summary-info">
-                Learn how to create custom 404 pages, use submodules, and
-                <a href="#" class="summary-text-link">
-                  learn more about GitHub Pages</a
-                >.
-              </p>
+            <div class="guides">
+              <div class="flexbox-summary">
+                <ion-icon class="summary-icon" name="book-outline"></ion-icon>
+                <a href="https://support.github.com/" class="summary-header"
+                  >Guides</a
+                >
+                <p class="summary-info">
+                  Learn how to create custom 404 pages, use submodules, and
+                  <a href="#" class="summary-text-link">
+                    learn more about GitHub Pages</a
+                  >.
+                </p>
+              </div>
             </div>
           </div>
         </div>
       </section>
     </main>
-    <footer class="footer">
-      <div class="left-side">
-        <div class="flex-footer">
-          <span>&copy; <span class="github">2022</span> GitHub, Inc.</span>
-          <a href="#" class="footer-text-link">Terms</a>
-          <a href="#" class="footer-text-link">Privacy</a>
-          <a href="#" class="footer-text-link">Security</a>
-          <a href="#" class="footer-text-link">Contact</a>
-        </div>
-      </div>
-      <div class="flex-footer">
-        <a href="#"
-          ><ion-icon class="logo-footer" name="logo-github"></ion-icon
-        ></a>
-      </div>
-      <div class="right-side">
-        <div class="flex-footer">
-          <a href="#" class="footer-text-link">Status</a>
-          <a href="#" class="footer-text-link">API</a>
-          <a href="#" class="footer-text-link">Training</a>
-          <a href="#" class="footer-text-link">Shop</a>
-          <a href="#" class="footer-text-link">Blog</a>
-          <a href="#" class="footer-text-link">About</a>
+    <footer>
+      <div class="container max-100">
+        <div class="footer">
+          <div class="left-side">
+            <div class="flex-footer">
+              <span>&copy; <span class="github">2022</span> GitHub, Inc.</span>
+              <a href="#" class="footer-text-link">Terms</a>
+              <a href="#" class="footer-text-link">Privacy</a>
+              <a href="#" class="footer-text-link">Security</a>
+              <a href="#" class="footer-text-link">Contact</a>
+            </div>
+          </div>
+          <div class="flex-footer">
+            <a href="#"
+              ><ion-icon class="logo-footer" name="logo-github"></ion-icon
+            ></a>
+          </div>
+          <div class="right-side">
+            <div class="flex-footer">
+              <a href="#" class="footer-text-link">Status</a>
+              <a href="#" class="footer-text-link">API</a>
+              <a href="#" class="footer-text-link">Training</a>
+              <a href="#" class="footer-text-link">Shop</a>
+              <a href="#" class="footer-text-link">Blog</a>
+              <a href="#" class="footer-text-link">About</a>
+            </div>
+          </div>
         </div>
       </div>
     </footer>
