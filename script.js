@@ -44,7 +44,7 @@ const slider = function (images, pos) {
   }
 };
 
-setInterval(slider, 2000, images, pos);
+setInterval(slider, 3000, images, pos);
 
 const manipulateActiveClass = function (elementArr, clicked) {
   elementArr.forEach((el) => el.classList.remove("btn--active"));

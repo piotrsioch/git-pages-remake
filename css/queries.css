@@ -38,9 +38,16 @@
 /**************************/
 
 @media (max-width: 59rem) {
+  html {
+    font-size: 50%;
+  }
   .video {
     width: 65rem;
     height: 36.7rem;
+  }
+
+  .header {
+    margin-top: 7rem;
   }
 
   .card {
@@ -96,6 +103,14 @@
     grid-template-columns: 1fr;
     row-gap: 2.4rem;
   }
+
+  .margin-bottom-big {
+    margin-bottom: 6rem;
+  }
+
+  .summary {
+    padding-bottom: 9rem;
+  }
 }
 
 /**************************/
@@ -103,9 +118,15 @@
 /**************************/
 
 @media (max-width: 47.5rem) {
-  html {
-    font-size: 50%;
+  .hero-section {
+    padding: 2rem 2rem 0;
   }
+
+  .slider {
+    max-width: 80rem;
+    height: 30rem;
+  }
+
   .hero-info {
     font-size: 4rem;
   }
@@ -115,8 +136,8 @@
   }
 
   .video {
-    width: 45rem;
-    height: 27.1rem;
+    width: 60rem;
+    height: 33.9rem;
   }
 
   .header {
@@ -144,6 +165,12 @@
     width: 40rem;
   }
 
+  .card-icon {
+    margin-top: 1rem;
+    height: 4rem;
+    width: 4rem;
+  }
+
   .grid-3-cols {
     grid-template-columns: 1fr;
   }
@@ -154,10 +181,23 @@
 }
 
 /**************************/
-/* BELOW 544px (Tablets) */
+/* BELOW 544px (Phones) */
 /**************************/
 
 @media (max-width: 34rem) {
+  .header-info--secondary {
+    margin-bottom: 3.2rem;
+  }
+
+  .header {
+    margin: 3rem 0;
+  }
+
+  .slider {
+    max-width: 70rem;
+    height: 22.5rem;
+  }
+
   .video {
     width: 35rem;
     height: 19.78rem;
@@ -165,11 +205,17 @@
 
   .card,
   .card--single {
-    max-width: 42.5rem;
+    max-width: 40rem;
     margin-bottom: 4rem;
+    padding-top: 2rem;
+    padding-bottom: 4rem;
   }
 
   .card-heading {
     font-size: 2.6rem;
+  }
+
+  .terminal-shell {
+    width: 36rem;
   }
 }
