@@ -26,6 +26,12 @@ const themeScratchMap = new Map();
 themeScratchMap.set(themeOrScratchBtns[0], optionTheme);
 themeScratchMap.set(themeOrScratchBtns[1], optionScratch);
 
+const cardsEl = document.querySelectorAll(".card");
+const cardsSingleEl = document.querySelectorAll(".card--single");
+const cards = [...cardsEl, ...cardsSingleEl];
+
+const gridSummaryEl = document.querySelector(".grid-3-cols");
+
 let index = 0;
 
 const pos = {
@@ -57,6 +63,17 @@ const manipulateHiddenAtribvute = function (map, e) {
   });
   const current = map.get(e.target);
   current.classList.remove("hide");
+  cards.forEach((card) => {
+    card.classList.add("hidden");
+    const cardBtns = card.querySelectorAll(".btn");
+    cardBtns.forEach((btn) => {
+      if (btn == e.target) {
+        card.classList.remove("hidden");
+        if (card.previousElementSibling?.classList.contains("card"))
+          card.previousElementSibling.classList.remove("hidden");
+      }
+    });
+  });
 };
 
 userProjectBtns.forEach((el) =>
@@ -77,16 +94,46 @@ themeOrScratchBtns.forEach((el) =>
   el.addEventListener("click", function (e) {
     manipulateActiveClass(themeOrScratchBtns, e.target);
     manipulateHiddenAtribvute(themeScratchMap, e);
-    console.log(e);
+    cards.forEach((card) => {
+      const cardBtns = card.querySelectorAll(".btn");
+      cardBtns.forEach((btn) => {
+        if (btn == e.target) {
+          card.classList.remove("hidden");
+        }
+      });
+    });
   })
 );
 
-// projectSiteBtnEl.addEventListener("click", function (e) {
-//   e.preventDefault();
-//   manipulateActiveClass(userProjectBtns, projectSiteBtnEl);
-// });
+// adding opacity 1
 
-// userOrOrganizationBtnEl.addEventListener("click", function (e) {
-//   e.preventDefault();
-//   manipulateActiveClass(userProjectBtns, userOrOrganizationBtnEl);
-// });
+const revealHidden = function (entries, _) {
+  entries.forEach((entry) => {
+    if (
+      entry.target.classList.contains("hidden--summary") &&
+      entry.isIntersecting
+    ) {
+      entry.target.classList.remove("hidden--summary");
+    } else if (entry.isIntersecting) {
+      entry.target.classList.remove("hidden");
+    }
+  });
+};
+
+const observer = new IntersectionObserver(revealHidden, {
+  root: null,
+  threshold: [0.15],
+});
+
+const observerSummary = new IntersectionObserver(revealHidden, {
+  root: null,
+  threshold: [0.8],
+});
+
+cards.forEach((card) => {
+  card.classList.add("hidden");
+});
+cards.forEach((card) => observer.observe(card));
+observerSummary.observe(gridSummaryEl);
+
+gridSummaryEl.classList.add("hidden--summary");

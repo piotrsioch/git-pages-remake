@@ -46,10 +46,14 @@ html {
   padding: 0.8rem;
   background-color: #333;
   font-size: 1.2rem;
-  color: #bbb;
+  font-weight: 600;
+  color: #bbbb;
   border-radius: 4px;
+  transition: all 0.4s;
+  text-decoration: none;
 }
 
+.btn-help:hover,
 .link:link,
 .link:visited {
   text-decoration: none;
@@ -162,9 +166,18 @@ html {
 
 .btn--active {
   background-color: #337ec6;
-  color: #fff;
+  color: #fff !important;
 }
 
+.btn:hover {
+  color: #337ec6;
+  border-color: #337ec6;
+}
+
+.user-organization-part,
+.project-site {
+  margin-bottom: 8rem;
+}
 .card {
   display: grid;
   grid-template-columns: 1.3fr 1fr;
@@ -393,6 +406,7 @@ html {
   justify-content: center;
   margin: 0 auto;
   column-gap: 4rem;
+  transition: all 0.8s;
 }
 
 .flexbox-summary {
@@ -473,4 +487,21 @@ footer {
 
 .hide {
   display: none;
+}
+
+/* trying to make cards appearing on scroll */
+
+.card,
+.card--single {
+  transition: 0.8s ease-out;
+}
+
+.hidden {
+  opacity: 0;
+  transform: translateY(4rem);
+}
+
+.hidden--summary {
+  opacity: 0;
+  transform: 0;
 }
